@@ -1,0 +1,126 @@
+@media screen and (max-width: 992px) {
+  .home .container .content {
+    width: 100%;
+  }
+
+  .home .container .content h1 {
+    font-size: 50px;
+    line-height: 50px;
+    text-align: center;
+  }
+
+  .home .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+  }
+  .carousel-caption {
+    width: 100%;
+    color: #000 !important;
+    position: absolute;
+    bottom: 0;
+  }
+  .navbar-nav a:hover::before,
+.navbar-nav::before {
+  width:0%;
+}
+
+body:has(#home:target) li a[href="#home"]::before,
+body:has(#about:target) li a[href="#about"]::before,
+body:has(#services:target) li a[href="#services"]::before,
+body:has(#blog:target) li a[href="#blog"]::before, 
+body:has(#contact:target) li a[href="#contact"]::before {
+  width: 0%;
+ 
+}
+
+
+}
+
+@media screen and (max-width: 768px) {
+  .home .container .content h1 {
+    font-size: 35px;
+  }
+  .home .content span {
+    text-align: center;
+    font-size: 30px;
+    line-height: 25px;
+    font-weight: 500;
+  }
+  .about .container .info {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    
+  }
+
+  .about .container .info .image {
+    width: 50%;
+    margin-bottom: 1.5625rem;
+  
+  }
+
+  .about .container .info .image img {
+    width: 100%;
+    border-radius: 10px;
+    margin-left: .625rem;
+  }
+  .about .container .info .details {
+    width: 100%;
+  
+  }  
+  .contact form .btn {
+    margin-bottom: 100px;
+  }
+  .contact .social {
+
+    width: 100%;
+    padding: 10px;
+    
+   }
+   
+   .contact .social .icon {
+     display: flex;
+     justify-content: center;
+   }
+   .contact .social .icon i {
+     width: 25px;
+     height: 25px;
+     border: 3px solid #0078ff;
+     border-radius: 50%;
+     padding: 15px;
+     font-size: 16px;
+    
+     
+   }
+}
+
+@media screen and (max-width: 550px) {
+
+  .box .container p {
+    width: 100%;
+    font-size: 17px;
+ 
+  
+  }  
+  .carousel-indicators [data-bs-target] {
+    width: 15px;
+      height: 15px;
+  
+  }
+  .contact form .btn  {
+    margin: 25px auto !important;
+   }  
+  
+}
+
+@media screen and (max-width: 460px) {
+  .box .container p {
+ width: 100%;
+  
+  } 
+  .contact form .btn  {
+   margin: 25px 0 !important;
+  }
+}
